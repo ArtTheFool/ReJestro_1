@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126040840034956562}
   - component: {fileID: 660739578812548676}
+  - component: {fileID: 606496791974602223}
   m_Layer: 0
   m_Name: SlimeVisual
   m_TagString: Untagged
@@ -85,6 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &606496791974602223
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537597035448607519}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b01ce7f509dfd0241a51abc5e4df890f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5683535223817904892
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +119,7 @@ GameObject:
   - component: {fileID: 7235888941658785044}
   - component: {fileID: 7803660688098645993}
   - component: {fileID: 7047782422143184525}
+  - component: {fileID: 6134589097926598522}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -204,6 +227,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6134589097926598522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5683535223817904892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingState: 1
+  roamingDistanceMax: 7
+  roamingDistanceMin: 3
+  roamingTimermax: 2
 --- !u!1 &7422919567112654547
 GameObject:
   m_ObjectHideFlags: 0
