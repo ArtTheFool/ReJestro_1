@@ -6,7 +6,6 @@ public class SwordSlashVisual : MonoBehaviour
 {
     [SerializeField] private Sword sword;
 
-    private const string ATTACK = "Attack";
     private Animator animator;
 
     private void Awake() {
@@ -18,7 +17,7 @@ public class SwordSlashVisual : MonoBehaviour
     }
 
     private void Sword_OnSwordSwing(object sender, System.EventArgs e) {
-        animator.SetTrigger(ATTACK);
+        animator.SetTrigger("Attack");
     }   
 
 }
