@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93439ad081a70d4478076f2a9dd3e57c
+guid: dd46279e29fc5b84a93c18c972dc402a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -110,169 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B_witch_run_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 336
-        width: 32
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9f390160bbee294eae537dc69470fc5
-      internalID: 1895496895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_witch_run_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 288
-        width: 32
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d38190a903e9ed4a906d76a7d2383ef
-      internalID: -1339284096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: B_witch_run_2
+      name: B_witch_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 240
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d900d211aae0943b036089721dfb59
-      internalID: -446731364
+      spriteID: c9e56facd73242349a04992fcbd5c644
+      internalID: 1539562072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B_witch_run_3
+      name: B_witch_idle_1
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a84af22e747e362458e8481b5835c403
-      internalID: -853963471
+      spriteID: 21d53e66162081f4d8c34d646a72e7c2
+      internalID: -788996164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B_witch_run_4
+      name: B_witch_idle_2
       rect:
         serializedVersion: 2
         x: 0
         y: 144
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a253e835da8d7874f989ddba45c352a0
-      internalID: 2132932088
+      spriteID: 8637dc6825e6c124c99ff0f58964d6a5
+      internalID: -78400274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B_witch_run_5
+      name: B_witch_idle_3
       rect:
         serializedVersion: 2
         x: 0
         y: 96
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e9d6c024de5ac4cbc0cfd3a968b317
-      internalID: -115001927
+      spriteID: c6490e956cf72f048aba0052fce048e7
+      internalID: 263805917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B_witch_run_6
+      name: B_witch_idle_4
       rect:
         serializedVersion: 2
         x: 0
         y: 48
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca4225295a576054c803d7803fc4cac2
-      internalID: -1982767418
+      spriteID: 83a1a3f16f13c3142818dd03b7417990
+      internalID: 770991551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B_witch_run_7
+      name: B_witch_idle_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf5a7328b1b8614782b21cfbe1a668d
-      internalID: -861988400
+      spriteID: 7f579fc8b7b534c41b2a3a083097fbcf
+      internalID: 1241652878
       vertices: []
       indices: 
       edges: []
@@ -288,14 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      B_witch_run_0: 1895496895
-      B_witch_run_1: -1339284096
-      B_witch_run_2: -446731364
-      B_witch_run_3: -853963471
-      B_witch_run_4: 2132932088
-      B_witch_run_5: -115001927
-      B_witch_run_6: -1982767418
-      B_witch_run_7: -861988400
+      B_witch_idle_0: 1539562072
+      B_witch_idle_1: -788996164
+      B_witch_idle_2: -78400274
+      B_witch_idle_3: 263805917
+      B_witch_idle_4: 770991551
+      B_witch_idle_5: 1241652878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
