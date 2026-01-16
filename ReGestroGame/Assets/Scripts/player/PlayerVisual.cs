@@ -24,7 +24,6 @@ public class PlayerVisual : MonoBehaviour
         Vector3 mousePos = GameInput.Instance.GetMousePosition();
         Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
 
-
         if (mousePos.x < playerPosition.x) {
             spriteRenderer.flipX = true;
         }
