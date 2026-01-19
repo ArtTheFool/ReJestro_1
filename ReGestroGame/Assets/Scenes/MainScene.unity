@@ -461,6 +461,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3621932747142733934, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: _damageAmount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845207186985228470, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845207186985228470, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.6689848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845207186985228470, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 1.5551924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845207186985228470, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -1.7937502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845207186985228470, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 1.5054197
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
