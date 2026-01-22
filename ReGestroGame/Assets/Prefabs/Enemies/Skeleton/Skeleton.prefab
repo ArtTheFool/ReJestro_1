@@ -134,10 +134,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingState: 1
-  roamingDistanceMax: 7
-  roamingDistanceMin: 3
-  roamingTimermax: 2
+  _startingState: 0
+  _roamingDistanceMax: 7
+  _roamingDistanceMin: 3
+  _roamingTimermax: 2
+  _isChasingEnemy: 0
+  _isAttackingEnemy: 0
 --- !u!114 &7760364610010309588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +293,7 @@ GameObject:
   - component: {fileID: 6915365376701387217}
   - component: {fileID: 6445701251746636423}
   - component: {fileID: 6355253728244695340}
+  - component: {fileID: 5965457254358740769}
   m_Layer: 0
   m_Name: SkeletonVision
   m_TagString: Untagged
@@ -387,3 +390,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5965457254358740769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8318019908796434396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0514c5792f68ca54c960dbe4d8be83f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
