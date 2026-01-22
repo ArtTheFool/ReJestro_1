@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 394804176001563577}
   - component: {fileID: 7760364610010309588}
   - component: {fileID: 4806884791693269312}
+  - component: {fileID: 433580798315881750}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -134,12 +135,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingState: 0
+  _startingState: 1
   _roamingDistanceMax: 7
   _roamingDistanceMin: 3
-  _roamingTimermax: 2
-  _isChasingEnemy: 0
+  _roamingTimermax: 10
+  _isChasingEnemy: 1
+  _chasingDistance: 4
+  _chasingSpeedMultiplier: 2
   _isAttackingEnemy: 0
+  _attacingDistance: 2
+  _attckrate: 2
 --- !u!114 &7760364610010309588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +187,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.36233675, y: 1.2609322}
@@ -198,6 +203,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1449349, y: 2.5942817}
   m_EdgeRadius: 0
+--- !u!60 &433580798315881750
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199772204275189311}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.5255594, y: 2.8818028}
+      - {x: 1.3151646, y: 2.9570909}
+      - {x: 1.112092, y: 2.0460918}
+      - {x: 0.65257835, y: 1.5100605}
+      - {x: 0.09794468, y: 1.2484206}
+      - {x: -0.11025518, y: 1.1324172}
+      - {x: 0.72869647, y: 0.67837226}
+      - {x: 1.8198843, y: 0.6141255}
+      - {x: 2.5630322, y: 0.7288494}
+      - {x: 3.095893, y: 0.93208396}
+      - {x: 4.043436, y: 1.4716022}
+      - {x: 3.3465362, y: 2.5870712}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3988872066874223120
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +420,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1369428737, guid: bc2221ded0cd80840ac16d5f796f80e8, type: 3}
+  m_Sprite: {fileID: 502390834, guid: 0243d72f589d5aa49bc06538dc0aeabd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -402,3 +464,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0514c5792f68ca54c960dbe4d8be83f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyAI: {fileID: 394804176001563577}
+  _enemyEntity: {fileID: 7760364610010309588}

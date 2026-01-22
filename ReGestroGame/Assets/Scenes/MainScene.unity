@@ -2010,17 +2010,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5086660016957611278, guid: ea4a7da90a819724488c29d452987140, type: 3}
   m_PrefabInstance: {fileID: 1426449683}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1470935298 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 394804176001563577, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-  m_PrefabInstance: {fileID: 8306891487431438733}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1570216713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3168,30 +3157,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 394804176001563577, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: _startingState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 394804176001563577, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: _isChasingEnemy
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 394804176001563577, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: _roamingTimermax
-      value: 10
+    - target: {fileID: 433580798315881750, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2199772204275189311, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 4806884791693269312, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 6445701251746636423, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
+      propertyPath: m_Size.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445701251746636423, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
+      propertyPath: m_Size.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445701251746636423, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1369428737, guid: bc2221ded0cd80840ac16d5f796f80e8, type: 3}
+    - target: {fileID: 6445701251746636423, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5965457254358740769, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: _enemyAI
-      value: 
-      objectReference: {fileID: 1470935298}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
