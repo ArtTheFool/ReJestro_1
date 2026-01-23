@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 322554898057231208}
   - component: {fileID: 3761590502620668375}
-  - component: {fileID: 4329362264093307690}
   - component: {fileID: 3573061788307671630}
-  - component: {fileID: 394804176001563577}
-  - component: {fileID: 7760364610010309588}
+  - component: {fileID: 4329362264093307690}
   - component: {fileID: 4806884791693269312}
   - component: {fileID: 433580798315881750}
+  - component: {fileID: 394804176001563577}
+  - component: {fileID: 7760364610010309588}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -66,6 +66,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!195 &3573061788307671630
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199772204275189311}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.6
+  m_Speed: 1.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!70 &4329362264093307690
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -101,63 +123,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.15890615, y: 0.103745915}
   m_Size: {x: 1.2712442, y: 0.2862232}
   m_Direction: 1
---- !u!195 &3573061788307671630
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2199772204275189311}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.6
-  m_Speed: 1.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 0.1
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &394804176001563577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2199772204275189311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _startingState: 1
-  _roamingDistanceMax: 7
-  _roamingDistanceMin: 3
-  _roamingTimermax: 10
-  _isChasingEnemy: 1
-  _chasingDistance: 4
-  _chasingSpeedMultiplier: 2
-  _isAttackingEnemy: 0
-  _attacingDistance: 2
-  _attckrate: 2
---- !u!114 &7760364610010309588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2199772204275189311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7422e6b87a5b5340be2baae74f786aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 20
 --- !u!61 &4806884791693269312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -257,9 +222,46 @@ PolygonCollider2D:
       - {x: 1.8198843, y: 0.6141255}
       - {x: 2.5630322, y: 0.7288494}
       - {x: 3.095893, y: 0.93208396}
-      - {x: 4.043436, y: 1.4716022}
+      - {x: 3.6570594, y: 1.2465441}
+      - {x: 3.7688644, y: 1.65465}
+      - {x: 3.709752, y: 2.1976123}
       - {x: 3.3465362, y: 2.5870712}
   m_UseDelaunayMesh: 0
+--- !u!114 &394804176001563577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199772204275189311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startingState: 0
+  _roamingDistanceMax: 7
+  _roamingDistanceMin: 3
+  _roamingTimermax: 2
+  _isChasingEnemy: 1
+  _chasingDistance: 4
+  _chasingSpeedMultiplier: 2
+  _isAttackingEnemy: 1
+  _attacingDistance: 2
+  _attackRate: 1.5
+--- !u!114 &7760364610010309588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199772204275189311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7422e6b87a5b5340be2baae74f786aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 20
 --- !u!1 &3988872066874223120
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,12 +422,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 502390834, guid: 0243d72f589d5aa49bc06538dc0aeabd, type: 3}
+  m_Sprite: {fileID: 1369428737, guid: bc2221ded0cd80840ac16d5f796f80e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 7.5, y: 7.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

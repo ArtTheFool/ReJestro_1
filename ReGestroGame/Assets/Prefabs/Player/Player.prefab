@@ -507,7 +507,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -523,8 +523,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.19051632, y: 1.2733817}
-      - {x: -0.6621716, y: 1.7453489}
-      - {x: -1.762811, y: 1.7727299}
+      - {x: -0.6689848, y: 1.5551924}
+      - {x: -1.7937502, y: 1.5054197}
       - {x: -2.7059531, y: 0.58955276}
       - {x: -2.6498652, y: -0.7217363}
       - {x: -2.1150713, y: -1.6628101}

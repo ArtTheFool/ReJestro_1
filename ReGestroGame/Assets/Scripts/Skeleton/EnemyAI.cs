@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour {
 
     [SerializeField] private bool _isAttackingEnemy = false;
     [SerializeField] private float _attacingDistance = 2f;
-    [SerializeField] private float _attckrate = 2f;
+    [SerializeField] private float _attackRate = 2f;
     private  float _nextAttackTime = 0f;
 
     private NavMeshAgent _navMeshAgent;
@@ -139,9 +139,10 @@ public class EnemyAI : MonoBehaviour {
     private void AttackingTarget() {
         if (Time.time > _nextAttackTime) {
             OnEnemyAttack?.Invoke(this, EventArgs.Empty);
+
+
+            _nextAttackTime = Time.time + _attackRate;
         }
-      
-        _nextAttackTime = Time.time + _attckrate;
     }
     private void MovementDirectionHandler() {
         if (Time.time > _nextCheckDirectionTime) {

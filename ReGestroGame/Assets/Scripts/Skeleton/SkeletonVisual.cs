@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 [RequireComponent(typeof(Animator))]
 public class SkeletonVisual : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class SkeletonVisual : MonoBehaviour {
     private Animator _animator;
     private const string IsRunning = "IsRunning";
     private const string CHASING_SPEED_MULTIPLIER = "ChasingSpeedMultiplier";
+    private const string ATTACK = "Attack";
     private void Awake() {
         _animator = GetComponent<Animator>();
     }
@@ -22,7 +24,8 @@ public class SkeletonVisual : MonoBehaviour {
     }
 
     private void Update() {
-        { _animator.SetBool(IsRunning, _enemyAI.IsRunning);
+        {
+            _animator.SetBool(IsRunning, _enemyAI.IsRunning);
             _animator.SetFloat(CHASING_SPEED_MULTIPLIER, _enemyAI.GetRoamingAnimationSpeed());
         }
 
@@ -33,9 +36,9 @@ public class SkeletonVisual : MonoBehaviour {
     }
     public void TriggerAttackAnimationTurnOn() {
         _enemyEntity.PolygonColliderTurnOn();
-    }
+    } 
 
     private void _enemyAI_OnEnemyAttack(object sender, System.EventArgs e) {
-        _animator.SetTrigger("Attack");
+        _animator.SetTrigger(ATTACK);
     }
 }
