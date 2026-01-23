@@ -419,11 +419,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 901571492257846294, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.36
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: 901571492257846294, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.33
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: 901571492257846294, guid: 726d5a8810bfdd449937b5da2ca89ad9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -642,7 +642,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9204946, y: 2.2858098, z: -2.9580903}
+  m_LocalPosition: {x: 0.100494534, y: 1.3858099, z: -2.9580903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -954,7 +954,7 @@ Transform:
   m_GameObject: {fileID: 811221649}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9204946, y: 2.2858098, z: -2.9580903}
+  m_LocalPosition: {x: 0.100494534, y: 1.3858099, z: -2.9580903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3095,11 +3095,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 322554898057231208, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.78
+      value: 6.45
       objectReference: {fileID: 0}
     - target: {fileID: 322554898057231208, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 322554898057231208, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3133,17 +3133,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 394804176001563577, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: _startingState
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2199772204275189311, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
       propertyPath: m_Name
       value: Skeleton
-      objectReference: {fileID: 0}
-    - target: {fileID: 4806884791693269312, guid: 3e8efba5a69af8f428551fc906a4cf48, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

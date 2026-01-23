@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3860d4561b320a459733c5c5a1d313e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingState: 0
+  _startingState: 1
   _roamingDistanceMax: 7
   _roamingDistanceMin: 3
   _roamingTimermax: 2
