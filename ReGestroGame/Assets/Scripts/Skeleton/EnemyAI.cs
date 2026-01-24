@@ -71,7 +71,10 @@ public class EnemyAI : MonoBehaviour {
         Statehandler();
         MovementDirectionHandler();
     }
-
+    public void SetDeathState() {
+        _navMeshAgent.ResetPath();
+        _currentState = State.Death;
+    }
     private void Statehandler() {
         switch (_currentState) {
             case State.Roaming:
@@ -106,6 +109,7 @@ public class EnemyAI : MonoBehaviour {
         return _navMeshAgent.speed / _roamingSpeed;
     }
     private void CheckCurrentState() {
+        if (_currentState == State.Death) return;
         float distanceToPlayer = Vector3.Distance(transform.position, Player.Instance.transform.position);
         State newState = State.Roaming;
 
@@ -139,12 +143,12 @@ public class EnemyAI : MonoBehaviour {
     private void AttackingTarget() {
         if (Time.time > _nextAttackTime) {
             OnEnemyAttack?.Invoke(this, EventArgs.Empty);
-
-
             _nextAttackTime = Time.time + _attackRate;
         }
     }
     private void MovementDirectionHandler() {
+        if (_currentState == State.Death) return;
+
         if (Time.time > _nextCheckDirectionTime) {
             if (IsRunning) {
                 ChangeFacingDirection(_lastPosition, transform.position);

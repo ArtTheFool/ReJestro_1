@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -117,7 +117,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.15890615, y: 0.103745915}
@@ -197,7 +197,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -242,13 +242,13 @@ MonoBehaviour:
   _startingState: 1
   _roamingDistanceMax: 7
   _roamingDistanceMin: 3
-  _roamingTimermax: 2
+  _roamingTimermax: 8
   _isChasingEnemy: 1
   _chasingDistance: 4
   _chasingSpeedMultiplier: 2
   _isAttackingEnemy: 1
   _attacingDistance: 2
-  _attackRate: 1.5
+  _attackRate: 1
 --- !u!114 &7760364610010309588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7422e6b87a5b5340be2baae74f786aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 20
+  _enemySO: {fileID: 11400000, guid: b4c826f19d9d4e14e92c2a03c30e887c, type: 2}
 --- !u!1 &3988872066874223120
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,3 +468,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyAI: {fileID: 394804176001563577}
   _enemyEntity: {fileID: 7760364610010309588}
+  _enemyShadow: {fileID: 3988872066874223120}
