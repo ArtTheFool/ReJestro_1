@@ -1,23 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
-
 [SelectionBase]
 public class Player : MonoBehaviour {
 
     public static Player Instance { get; private set; }
 
-   [SerializeField] private float movingSpeed = 10f;
+   [SerializeField] private float _movingSpeed = 10f;
     Vector2 inputVector;
     private Rigidbody2D rb;
+    private KnockBack _knockBack;
 
-    private float minMovingSpeed = 0.1f;
-    private bool isRunning = false;
+    private float _minMovingSpeed = 0.1f;
+    private bool _isRunning = false;
 
     private void Awake() {
         Instance = this;
-        rb = GetComponent<Rigidbody2D>();    
+        rb = GetComponent<Rigidbody2D>();   
+        _knockBack = GetComponent<KnockBack>();
     }
     private void Start() {
         GameInput.Instance.OnPlayerAttack += Player_OnPlayerAttack;
@@ -34,19 +32,23 @@ public class Player : MonoBehaviour {
     private void FixedUpdate() {
         HandleMovement();
     }
+    private void TakeDamage(Transform damageSource, int damage) 
+    {
+        _knockBack.GetKnockedBack(damageSource);
+    }
 
     private void HandleMovement() {
-        rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime));
-        if (Mathf.Abs(inputVector.x) > minMovingSpeed || Mathf.Abs(inputVector.y) > minMovingSpeed) {
-            isRunning = true;
+        rb.MovePosition(rb.position + inputVector * (_movingSpeed * Time.fixedDeltaTime));
+        if (Mathf.Abs(inputVector.x) > _minMovingSpeed || Mathf.Abs(inputVector.y) > _minMovingSpeed) {
+            _isRunning = true;
         }
         else {
-            isRunning = false;
+            _isRunning = false;
         }
     }
 
     public bool IsRunning() {
-        return isRunning;
+        return _isRunning;
     }
 
     public Vector3 GetPlayerScreenPosition() {
