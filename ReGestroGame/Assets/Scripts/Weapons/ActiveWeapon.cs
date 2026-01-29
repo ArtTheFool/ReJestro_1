@@ -14,7 +14,8 @@ public class ActiveWeapon : MonoBehaviour {
     }
 
     private void Update() {
-        FollowMousePosition();    
+        if (Player.Instance.IsAlive())
+            FollowMousePosition();    
     }
 
     public Sword GetActiveWepon() {

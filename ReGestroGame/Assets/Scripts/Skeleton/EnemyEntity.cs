@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [RequireComponent(typeof(PolygonCollider2D))]
@@ -28,10 +29,12 @@ public class EnemyEntity : MonoBehaviour {
     private void Start() {
         _currentHealth = _enemySO.enemyHelth;
     }
-    private void OnTriggerEnter2D(Collider2D collision) 
-    {
-      //  Debug.Log("Attack"); 
-    }
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (collision.transform.TryGetComponent (out Player player))
+            { player.TakeDamage(transform, _enemySO.enemyDamageAmount);
+        }
+
+        }
     public void TakeDamage(int damage) {
         if (_currentHealth <= 0) return;
         _currentHealth -= damage;

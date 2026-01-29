@@ -9,12 +9,12 @@ public class KnockBack : MonoBehaviour {
 
     private float _knockBackMovingTimer;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D _rb;
    
-
-
+    public bool IsGettingKnockedBack { get; private set; }
+    
     private void Awake() {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update() {
@@ -24,13 +24,15 @@ public class KnockBack : MonoBehaviour {
     }
 
     public void GetKnockedBack(Transform damageSourse) {
+        IsGettingKnockedBack = true;
         _knockBackMovingTimer = _knockBackMovingTimermax;
-        Vector2 difference = (transform.position - damageSourse.position).normalized * _knockBackForce / rb.mass;
-   rb.AddForce(difference, ForceMode2D.Impulse);
+        Vector2 difference = (transform.position - damageSourse.position).normalized * _knockBackForce / _rb.mass;
+   _rb.AddForce(difference, ForceMode2D.Impulse);
     }
 
-    private void StopKnockBackMovement() {
-        rb.velocity = Vector2.zero;
+    public void StopKnockBackMovement() {
+        _rb.velocity = Vector2.zero;
+        IsGettingKnockedBack = false;
     }
 
 }
